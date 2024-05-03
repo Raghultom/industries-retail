@@ -38,10 +38,6 @@
         background-color: white;
     }
 </style>
-<style>
-
-
-</style>
 
 <body>
 
@@ -293,54 +289,52 @@
 
 
     <!-- software solution section -->
-
-    <!--     
+<!-- 
     <div class="container">
         <div class="software-solutions">
             <h2 class="software-solutions-header">Retail & eCommerce <span
                     class="software-solutions-header-span">Software Solutions</span></h2>
-            <div class="row">
-                <div class="col" id="first-column">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card default-card software-card selected" onclick="showText(1)" id="card1"
-                                data-card="1">
-                                <div class="card-body">
-                                    <p class="card-text">Delivery Solution</p>
-                                </div>
-                            </div>
-                            <div class="card software-card" onclick="showText(2)" id="card2" data-card="2">
-                                <div class="card-body">
-                                    <p class="card-text">B2C E-Commerce Platform</p>
-                                </div>
-                            </div>
-                            <div class="card software-card" onclick="showText(3)" id="card3" data-card="3">
-                                <div class="card-body">
-                                    <p class="card-text">Multi-Vendor Platform</p>
-                                </div>
+            <div class="row ">
+              <div class="col-md-5" id="first-column">
+                <div class="row">
+                    <div class="col-md-12 scrollable-container"> 
+                        <div class="card default-card software-card selected" onclick="showText(1)" id="card1" data-card="1">
+                            <div class="card-body">
+                                <p class="card-text">Delivery Solution</p>
                             </div>
                         </div>
-                        <div class="col software-solutions-top-col">
-                            <div class="card software-card" onclick="showText(4)" id="card4" data-card="4">
-                                <div class="card-body">
-                                    <p class="card-text">Retail ERP Software</p>
-                                </div>
+                        <div class="card software-card card-adjustment" onclick="showText(2)" id="card2" data-card="2">
+                            <div class="card-body">
+                                <p class="card-text">B2C E-Commerce Platform</p>
                             </div>
-                            <div class="card software-card" onclick="showText(5)" id="card5" data-card="5">
-                                <div class="card-body">
-                                    <p class="card-text">Purchase Customized Product</p>
-                                </div>
+                        </div>
+                        <div class="card software-card card-adjustment2" onclick="showText(3)" id="card3" data-card="3">
+                            <div class="card-body">
+                                <p class="card-text">Multi-Vendor Platform</p>
                             </div>
-                            <div class="card software-card" onclick="showText(6)" id="card6" data-card="6">
-                                <div class="card-body">
-                                    <p class="card-text">Magento Enterprise Solution</p>
-                                </div>
+                        </div>
+                        <div class="card software-card" onclick="showText(4)" id="card4" data-card="4">
+                            <div class="card-body">
+                                <p class="card-text">Retail ERP Software</p>
+                            </div>
+                        </div>
+                        <div class="card software-card card-adjustment2" onclick="showText(5)" id="card5" data-card="5">
+                            <div class="card-body">
+                                <p class="card-text">Purchase Customized Product</p>
+                            </div>
+                        </div>
+                        <div class="card software-card" onclick="showText(6)" id="card6" data-card="6">
+                            <div class="card-body">
+                                <p class="card-text">Magento Enterprise Solution</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            
 
-                <div class="col" id="second-column">
+                <div class="col-md-7" id="second-column">
                     <div id="content-1" style="display: block;">
                         <h1 class="software-solutions-content-header"> Delivery Solution</h1>
                         <p class="software-solutions-content-header-discription">ERP is a Business Management Solution
@@ -554,9 +548,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
 
                     </div>
 
@@ -1010,6 +1001,8 @@
         </div>
 
     </div>
+
+
 
     <script>
         function showText(cardNumber) {
@@ -1667,7 +1660,6 @@
     <!-- benefits  section end-->
     <!-- client -->
 
-<!-- 
     <div class="client-main-div">
         <div class="container">
             <div class="row client-row">
@@ -1706,130 +1698,8 @@
                         </div>
                     </div>
                     <div class="client-arrow">
-                        <img src="./images/leftarrow.png" class="client-arrow1" onclick="showPreviousProfile()">
-                        <img src="./images/rightarrow.png" class="client-arrow2" onclick="showNextProfile()">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <script>
-        // Array to store profiles
-        var profiles = [
-            {
-                name: "Joseph Franklo",
-                designation: "Director, Techinsiration LLC",
-                description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
-                image: "./images/p1.png"
-            },
-            {
-                name: "Joseph Franklo 1",
-                designation: "Director, Techinsiration LLC 1",
-                description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
-                image: "./images/p1.png"
-            },
-            {
-                name: "Joseph Franklo 2",
-                designation: "Director, Techinsiration LLC 2",
-                description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
-                image: "./images/p1.png"
-            },
-            // Add more profiles in the same format
-        ];
-
-        var currentIndex = 0;
-
-        function showPreviousProfile() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                displayProfile("fade-out");
-            }
-        }
-
-        function showNextProfile() {
-            if (currentIndex < profiles.length - 1) {
-                currentIndex++;
-                displayProfile("fade-out");
-            }
-        }
-
-        function displayProfile(animationName) {
-            var profile = profiles[currentIndex];
-            var card = document.querySelector(".client-card");
-
-            // Apply animation class
-            card.classList.add(animationName);
-
-            // Delay resetting animation class and updating profile
-            setTimeout(() => {
-                card.classList.remove(animationName);
-                document.querySelector(".client-card-profilename").innerText = profile.name;
-                document.querySelector(".client-card-profile-discriiption").innerText = profile.designation;
-                document.querySelector(".client-discription").innerText = profile.description;
-                document.querySelector(".client-img").src = profile.image;
-                card.classList.add("fade-in"); // Add fadeIn class to smoothly fade in
-            }, 500);
-
-            // Remove fadeIn class after the transition
-            setTimeout(() => {
-                card.classList.remove("fade-in");
-            }, 1000); // Adjust timing based on your transition duration
-        }
-
-        // Display initial profile
-        displayProfile("");
-    </script> -->
-
-<!-- 
-    <div class="client-main-div">
-        <div class="container">
-            <div class="row client-row">
-                <div class="col-md-6 col-12 client-col1">
-                    <h2 class="client-header">What Our <br>
-                        <span class="client-header-span">Valuable Client Says </span>
-                    </h2>
-                </div>
-
-                <div class="col-md-6 col-12 client-col2">
-                    <div class="card client-card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row client-row1 align-items-center">
-                                        <div class="col-auto pr-0">
-                                            <img src="./images/p1.png" alt="tick" class="client-img">
-                                        </div>
-                                        <div class="col">
-                                            <p class="client-card-profilename mb-0">Joseph Franklo</p>
-                                            <p class="client-card-profile-discriiption">Director, Techinsiration LLC</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="container">
-                                            <p class="client-discription">“Justlogix has been able to ramp up their
-                                                teams
-                                                to meet our needs, new development initiatives. The code they
-                                                delivered was of high quality, and overall, the communication was very
-                                                good.”
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="client-arrow">
-                        <span class="client-arrow1" onclick="showPreviousProfile()">
-                            <i class="fas fa-arrow-left" style="color: lightgray;"></i>
-                        </span>
-                        <span class="client-arrow2" onclick="showNextProfile()">
-                            <i class="fas fa-arrow-right" style="color: black;"></i>
-                        </span>
+                        <img src="./images/leftarrow_lite.png" class="client-arrow1" onclick="showPreviousProfile()">
+                        <img src="./images/rightarrow_dark.png" class="client-arrow2" onclick="showNextProfile()">
                     </div>
                 </div>
             </div>
@@ -1891,18 +1761,18 @@
                 document.querySelector(".client-discription").innerText = profile.description;
                 document.querySelector(".client-img").src = profile.image;
 
-                // Change arrow color based on availability of previous or next profiles
+                // Change arrow images based on availability of previous or next profiles
                 var prevArrow = document.querySelector(".client-arrow1");
                 var nextArrow = document.querySelector(".client-arrow2");
                 if (currentIndex === 0) {
-                    prevArrow.style.color = "lightgray";
+                    prevArrow.src = "./images/leftarrow_lite.png";
                 } else {
-                    prevArrow.style.color = "black";
+                    prevArrow.src = "./images/leftarrow_dark.png";
                 }
                 if (currentIndex === profiles.length - 1) {
-                    nextArrow.style.color = "lightgray";
+                    nextArrow.src = "./images/rightarrow_lite.png";
                 } else {
-                    nextArrow.style.color = "black";
+                    nextArrow.src = "./images/rightarrow_dark.png";
                 }
 
                 card.classList.add("fade-in"); // Add fadeIn class to smoothly fade in
@@ -1916,181 +1786,8 @@
 
         // Display initial profile
         displayProfile("");
-
-        // Initialize Hammer.js for swipe gestures
-        var myElement = document.querySelector('.client-card');
-        var hammer = new Hammer(myElement);
-
-        hammer.on('swipeleft', function() {
-            // Handle swipe left
-            showNextProfile();
-        });
-
-        hammer.on('swiperight', function() {
-            // Handle swipe right
-            showPreviousProfile();
-        });
-    </script> -->
-
-
-    <div class="client-main-div">
-        <div class="container">
-            <div class="row client-row">
-                <div class="col-md-6 col-12 client-col1">
-                    <h2 class="client-header">What Our <br>
-                        <span class="client-header-span">Valuable Client Says </span>
-                    </h2>
-                </div>
-
-                <div class="col-md-6 col-12 client-col2">
-                    <div class="card client-card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row client-row1 align-items-center">
-                                        <div class="col-auto pr-0">
-                                            <img src="./images/p1.png" alt="tick" class="client-img">
-                                        </div>
-                                        <div class="col">
-                                            <p class="client-card-profilename mb-0">Joseph Franklo</p>
-                                            <p class="client-card-profile-discriiption">Director, Techinsiration LLC</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="container">
-                                            <p class="client-discription">“Justlogix has been able to ramp up their
-                                                teams
-                                                to meet our needs, new development initiatives. The code they
-                                                delivered was of high quality, and overall, the communication was very
-                                                good.”
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="client-arrow">
-                        <span class="client-arrow1" onclick="showPreviousProfile()">
-                            <i class="fas fa-arrow-left" style="color: lightgray;"></i>
-                        </span>
-                        <span class="client-arrow2" onclick="showNextProfile()">
-                            <i class="fas fa-arrow-right" style="color: black;"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // Array to store profiles
-        var profiles = [
-            {
-                name: "Joseph Franklo",
-                designation: "Director, Techinsiration LLC",
-                description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
-                image: "./images/p1.png"
-            },
-            {
-                name: "Joseph Franklo 1",
-                designation: "Director, Techinsiration LLC 1",
-                description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
-                image: "./images/p1.png"
-            },
-            {
-                name: "Joseph Franklo 2",
-                designation: "Director, Techinsiration LLC 2",
-                description: "Justlogix has been able to ramp up their teams to meet our needs, new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.",
-                image: "./images/p1.png"
-            }
-            // Add more profiles in the same format
-        ];
-
-        var currentIndex = 0;
-
-        function showPreviousProfile() {
-            if (currentIndex > 0) {
-                currentIndex--;
-                displayProfile("fade-out");
-                // Change the color of the right arrow to black
-                document.querySelector(".client-arrow2 i").style.color = "black";
-            }
-            // Change the color of the left arrow to light gray when reaching the first profile
-            if (currentIndex === 0) {
-                document.querySelector(".client-arrow1 i").style.color = "lightgray";
-            }
-        }
-
-        function showNextProfile() {
-            if (currentIndex < profiles.length - 1) {
-                currentIndex++;
-                displayProfile("fade-out");
-            } else if (currentIndex === profiles.length - 1) {
-                // Change the color of the right arrow to light gray when reaching the last profile
-                document.querySelector(".client-arrow2 i").style.color = "lightgray";
-            }
-            // Change the color of the left arrow to black when navigating away from the last profile
-            if (currentIndex !== 0) {
-                document.querySelector(".client-arrow1 i").style.color = "black";
-            }
-        }
-
-        function displayProfile(animationName) {
-            var profile = profiles[currentIndex];
-            var card = document.querySelector(".client-card");
-
-            // Apply animation class
-            card.classList.add(animationName);
-
-            // Delay resetting animation class and updating profile
-            setTimeout(() => {
-                card.classList.remove(animationName);
-                document.querySelector(".client-card-profilename").innerText = profile.name;
-                document.querySelector(".client-card-profile-discriiption").innerText = profile.designation;
-                document.querySelector(".client-discription").innerText = profile.description;
-                document.querySelector(".client-img").src = profile.image;
-
-                // Change arrow color based on availability of previous or next profiles
-                var prevArrow = document.querySelector(".client-arrow1");
-                var nextArrow = document.querySelector(".client-arrow2");
-                if (currentIndex === 0) {
-                    prevArrow.style.color = "lightgray";
-                } else {
-                    prevArrow.style.color = "black";
-                }
-                if (currentIndex === profiles.length - 1) {
-                    nextArrow.style.color = "lightgray";
-                } else {
-                    nextArrow.style.color = "black";
-                }
-
-                card.classList.add("fade-in"); // Add fadeIn class to smoothly fade in
-            }, 500);
-
-            // Remove fadeIn class after the transition
-            setTimeout(() => {
-                card.classList.remove("fade-in");
-            }, 1000); // Adjust timing based on your transition duration
-        }
-
-        // Display initial profile
-        displayProfile("");
-
-        // Initialize Hammer.js for swipe gestures
-        var myElement = document.querySelector('.client-card');
-        var hammer = new Hammer(myElement);
-
-        hammer.on('swipeleft', function() {
-            // Handle swipe left
-            showNextProfile();
-        });
-
-        hammer.on('swiperight', function() {
-            // Handle swipe right
-            showPreviousProfile();
-        });
     </script>
+
 
     <!-- client  section end-->
 
