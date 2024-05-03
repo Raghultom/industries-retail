@@ -877,6 +877,10 @@ color: #676968 !important;
     font-weight: 600;
     line-height: 25.14px;
     text-align: left;
+    /* margin-top: -25px !important; */
+}
+.benefits-col-mobile{
+  /* margin-left: 40px !important; */
 }
 
 .benefits-row {
@@ -918,6 +922,7 @@ text-align: left !important;
 .benefits-img {
   margin-left: 0px !important;
 }
+
 .benefits-col-header{
   margin-left: -40px !important;
 margin-top:3px !important;
@@ -1330,7 +1335,7 @@ color: #676968 !important;
    
   }
   .casestudies-maindiv{
-    margin-top: 500px !important;
+    margin-top: 500px !important    ;
   }
   .casestudies-span1::after {
     content: '';
