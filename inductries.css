@@ -426,7 +426,7 @@ text-align: left;
   line-height: 22px;
   text-align: left;
   color: #676968;
-  width: 115%;
+  /* width: 115%; */
 }
 .software-card {
   flex-shrink: 0; /* Prevent cards from shrinking */
@@ -448,6 +448,50 @@ text-align: left;
 
 
 @media screen and (max-width: 768px) {
+  .software-solutions-header{
+font-size: 32px;
+font-weight: 600;
+line-height: 32px;
+text-align: left;
+  }
+.software-solutions-header-span::after {
+  display: none !important;
+}
+.software-solutions-content-header{
+font-size: 16px;
+font-weight: 600;
+line-height: 22px;
+text-align: left;
+
+
+}
+.software-solutions-content-header-discription{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #676968;
+}
+.software-solutions-col-header{
+font-size: 16px;
+font-weight: 600;
+line-height: 20.11px;
+text-align: left;
+margin-top: -20px !important;
+margin-left: 30px !important;
+
+}
+.software-solutions-col-discription{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #676968;
+margin-left: 30px !important;
+}
+#second-column{
+  margin-top: -40px !important;
+}
   .card-adjustment{
     margin-top: 0px !important;
   }
@@ -553,6 +597,7 @@ text-align: left;
     font-weight: 600;
     line-height: 60.34px;
     text-align: left;
+    padding-top: 50px !important;
     
 }
 .scope-header-span{
@@ -639,6 +684,7 @@ font-weight: 600;
 line-height: 40.22px;
 text-align: left;
 height: auto !important;
+padding-top: 0px !important;
 
     }
 
@@ -1272,6 +1318,7 @@ font-size: 32px;
 font-weight: 600;
 line-height: 40.22px;
 text-align: left;
+padding-bottom: 20px !important;
 
   }
   .platform-discription{
@@ -1462,6 +1509,7 @@ color: #676968 !important;
     line-height: 40.22px;
     width: 270px;
 /* height: 21px; */
+margin-top: 50px !important;
 
   }
   .casestudies-para3 {
@@ -1610,7 +1658,7 @@ margin-top: 10px !important;
   @media (max-width: 728px){
     .section13layout{
       width: 100%;
-      margin-top: 20px;
+      margin-top: 0px;
      }
      .section13header{
       width: 100%;
@@ -2135,3 +2183,67 @@ margin-top: 10px !important;
   height: 300px; /* Adjust card height as needed */
   margin-right: 10px; /* Adjust spacing between cards as needed */
 }
+
+
+
+
+
+/* 
+
+
+
+.image-column {
+  border: 1px solid #ccc; 
+  padding: 25px;
+}
+.image-column:nth-child(1) {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  
+}
+.image-column:nth-child(2) {
+  border-top: none;
+  border-right: none;
+}
+.image-column:nth-child(3) {
+  border-top: none;
+  border-right: none;
+}
+.image-column:nth-child(4) {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+.image-column:nth-child(5) {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.image-column:nth-child(6) {
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+.image-column:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+.image-column:nth-child(8) {
+  border-bottom: none;
+  border-right: none;
+}
+.image-column:nth-child(9) {
+  border-bottom: none;
+  border-right:none;
+}
+
+.image-column {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+} */
