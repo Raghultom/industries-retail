@@ -448,6 +448,9 @@ text-align: left;
 
 
 @media screen and (max-width: 768px) {
+  .software-solutions{
+    margin-top: 60px !important;
+  }
   .software-solutions-header{
 font-size: 32px;
 font-weight: 600;
@@ -501,10 +504,11 @@ margin-left: 30px !important;
   .software-solutions .software-card .card-text {
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 14px;
     text-align: left;
-    margin-top: 0px !important;
-    margin-left: 10px !important;
+    margin-top: 20px !important;
+    margin-left: 1% !important;
+    width: auto !important;
   }
   .software-card {
     max-height: 100px !important; /* Set maximum width */
@@ -533,6 +537,17 @@ margin-left: 30px !important;
   .software-card {
       flex-shrink: 0; /* Prevent cards from shrinking */
       margin-right: 10px; /* Adjust as needed */
+  }
+  .card-number {
+    position: absolute;
+    top: 1%; /* Position at the center vertically */
+    left: 1%; /* Position at the center horizontally */
+font-size: 24px;
+font-weight: 600;
+line-height: 22px;
+text-align: left;
+
+  
   }
 }
 
@@ -575,6 +590,8 @@ margin-left: 30px !important;
     flex-basis: calc(50% - 10px); /* Adjust for margin */
     margin-bottom: 10px; /* Add margin between cards */
 }
+
+
 }
 
 
@@ -685,7 +702,7 @@ font-weight: 600;
 line-height: 40.22px;
 text-align: left;
 height: auto !important;
-padding-top: 0px !important;
+padding-top: 20px !important;
 
     }
 
@@ -728,8 +745,8 @@ display: none !important;
 
 
 /* Expertise */
-.Expertise-container {
-    margin-top: 90px !important;
+.Expertise-top-div{
+    margin-top: 50px !important;
 }
 
 .Expertise-header {
@@ -798,6 +815,9 @@ display: none !important;
 }
 
 @media (max-width:768px) {
+  .Expertise-top-div{
+    margin-top: 30px !important;
+}
     .expertise-card{
         height:  auto !important;
         /* width:  100% !important; */
@@ -973,6 +993,7 @@ color: #676968 !important;
   }
   .mobile {
     display: block !important;
+    margin-left: 5px !important;
   }
     .development-img-col2{
         display: none !important;
@@ -1056,11 +1077,30 @@ color: #676968 !important;
     color: #676968;
 
 }
+@media (min-width:320px)and (max-width:374px){
+  .benefits-container {
+    margin-top: 500px !important;
+  }
+  
+}
+@media (min-width:375px)and (max-width:424px){
+  .benefits-container {
+    margin-top: 490px !important;
+  }
+  
+}
+@media (min-width:425px)and (max-width:767px){
+  .benefits-container {
+    margin-top: 390px !important;
+  }
+  
+}
+
 
 @media (max-width:768px) {
-.benefits-container {
+/* .benefits-container {
   margin-top: 500px !important;
-}
+} */
   .benefits-header{
 font-size: 32px !important;
 font-weight: 600 !important;
@@ -1473,7 +1513,26 @@ color: #676968 !important;
   margin-top: 50px;
 }
 
-
+@media (min-width:320px)and (max-width:374px){
+  .casestudies-maindiv{
+    margin-top: 500px !important;
+  }
+}
+@media (min-width:375px)and (max-width:424px){
+  .casestudies-maindiv{
+    margin-top: 480px !important;
+  }
+}
+@media (min-width:425px)and (max-width:767px){
+  .casestudies-maindiv{
+    margin-top: 420px !important;
+  }
+}
+/* @media (min-width:768px){
+  .casestudies-maindiv{
+    margin-top: 180px !important;
+  }
+} */
 
 @media (max-width:768px) {
   .casestudies-image_display1 {
@@ -1497,7 +1556,7 @@ color: #676968 !important;
    
   }
   .casestudies-maindiv{
-    margin-top: 500px !important    ;
+    /* margin-top: 500px !important; */
   }
   .casestudies-span1::after {
     content: '';
