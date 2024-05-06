@@ -37,6 +37,11 @@
     .carousel-control-next-icon {
         background-color: white;
     }
+
+
+    .bold-text {
+  font-weight: bold;
+}
 </style>
 
 <body>
@@ -51,7 +56,7 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="border: none;"></span>
             </button>
-          
+
             <div class="sidebar">
                 <div class="sidebar-header">
                     <a class="navbar-brand" href="#" style="padding: 0;">
@@ -294,44 +299,48 @@
             <h2 class="software-solutions-header">Retail & eCommerce <span
                     class="software-solutions-header-span">Software Solutions</span></h2>
             <div class="row ">
-              <div class="col-md-5" id="first-column">
-                <div class="row">
-                    <div class="col-md-12 scrollable-container"> 
-                        <div class="card default-card software-card selected" onclick="showText(1)" id="card1" data-card="1">
-                            <div class="card-body">
-                                <p class="card-text">Delivery Solution</p>
+                <div class="col-md-5" id="first-column">
+                    <div class="row">
+                        <div class="col-md-12 scrollable-container">
+                            <div class="card default-card software-card selected" onclick="showText(1)" id="card1"
+                                data-card="1">
+                                <div class="card-body">
+                                    <p class="card-text">Delivery Solution</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card software-card card-adjustment" onclick="showText(2)" id="card2" data-card="2">
-                            <div class="card-body">
-                                <p class="card-text">B2C E-Commerce Platform</p>
+                            <div class="card software-card card-adjustment" onclick="showText(2)" id="card2"
+                                data-card="2">
+                                <div class="card-body">
+                                    <p class="card-text">B2C E-Commerce Platform</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card software-card card-adjustment2" onclick="showText(3)" id="card3" data-card="3">
-                            <div class="card-body">
-                                <p class="card-text">Multi-Vendor Platform</p>
+                            <div class="card software-card card-adjustment2" onclick="showText(3)" id="card3"
+                                data-card="3">
+                                <div class="card-body">
+                                    <p class="card-text">Multi-Vendor Platform</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card software-card" onclick="showText(4)" id="card4" data-card="4">
-                            <div class="card-body">
-                                <p class="card-text">Retail ERP Software</p>
+                            <div class="card software-card" onclick="showText(4)" id="card4" data-card="4">
+                                <div class="card-body">
+                                    <p class="card-text">Retail ERP Software</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card software-card card-adjustment2" onclick="showText(5)" id="card5" data-card="5">
-                            <div class="card-body">
-                                <p class="card-text">Purchase Customized Product</p>
+                            <div class="card software-card card-adjustment2" onclick="showText(5)" id="card5"
+                                data-card="5">
+                                <div class="card-body">
+                                    <p class="card-text">Purchase Product</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card software-card" onclick="showText(6)" id="card6" data-card="6">
-                            <div class="card-body">
-                                <p class="card-text">Magento Enterprise Solution</p>
+                            <div class="card software-card" onclick="showText(6)" id="card6" data-card="6">
+                                <div class="card-body">
+                                    <p class="card-text">Magento Enterprise Solution</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            
+
+
 
                 <div class="col-md-7" id="second-column">
                     <div id="content-1" style="display: block;">
@@ -1110,7 +1119,7 @@
                     <img src="./images/scope mobile.png" alt="scope" class="img-fluid  scopemobile-image">
 
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12 ">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 " style="padding-bottom: 50px !important;">
                     <div id="accordion">
                         <div class="card scope-main-card">
                             <div class="card scope-card">
@@ -1124,8 +1133,8 @@
 
                                 </div>
 
-                                <div id="collapseOne" class="collapse show scope-card-body" aria-labelledby="headingOne"
-                                    data-parent="#accordion">
+                                <div id="collapseOne" class="collapse  show scope-card-body"
+                                    aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body scope-card-content">
                                         Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed
                                         modi
@@ -1215,7 +1224,7 @@
         </div>
     </div>
 
-
+    <!-- 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const headings = document.querySelectorAll('.scope-card-header');
@@ -1269,13 +1278,84 @@
             }
         });
 
-    </script>
+    </script> -->
+
+
+
+<!-- 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var accordions = document.querySelectorAll('.scope-card-header');
+    accordions.forEach(function (accordion) {
+        // Check if the card is initially open
+        var isOpen = accordion.getAttribute('aria-expanded') === 'true';
+        var chevron = accordion.querySelector('.scope-icon');
+        
+        // Toggle the icon based on the initial state
+        chevron.classList.toggle('bi-chevron-up', isOpen);
+        chevron.classList.toggle('bi-chevron-down', !isOpen);
+        
+        accordion.addEventListener('click', function () {
+            var isCollapsed = accordion.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle all icons to down initially
+            accordions.forEach(function (acc) {
+                var icon = acc.querySelector('.scope-icon');
+                icon.classList.remove('bi-chevron-up');
+                icon.classList.add('bi-chevron-down');
+            });
+            
+            // Toggle the clicked icon accordingly
+            chevron.classList.toggle('bi-chevron-up', !isCollapsed);
+            chevron.classList.toggle('bi-chevron-down', isCollapsed);
+        });
+    });
+});
+
+    </script> -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    var accordions = document.querySelectorAll('.scope-card-header');
+    accordions.forEach(function (accordion) {
+        // Check if the card is initially open
+        var isOpen = accordion.getAttribute('aria-expanded') === 'true';
+        var chevron = accordion.querySelector('.scope-icon');
+        var headerText = accordion.querySelector('.scope-card-header-text');
+        
+        // Toggle the icon based on the initial state
+        chevron.classList.toggle('bi-chevron-up', isOpen);
+        chevron.classList.toggle('bi-chevron-down', !isOpen);
+        
+        // Toggle the bold text class based on the initial state
+        headerText.classList.toggle('bold-text', isOpen);
+        
+        accordion.addEventListener('click', function () {
+            var isCollapsed = accordion.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle all icons to down initially
+            accordions.forEach(function (acc) {
+                var icon = acc.querySelector('.scope-icon');
+                icon.classList.remove('bi-chevron-up');
+                icon.classList.add('bi-chevron-down');
+            });
+            
+            // Toggle the clicked icon accordingly
+            chevron.classList.toggle('bi-chevron-up', !isCollapsed);
+            chevron.classList.toggle('bi-chevron-down', isCollapsed);
+            
+            // Toggle the bold text class accordingly
+            headerText.classList.toggle('bold-text', !isCollapsed);
+        });
+    });
+});
+
+</script>
 
     <!-- Expertise -->
 
 
-    <div class="container" style="margin-top: 80px !important;">
-        <div style="margin-top: 30px  ;">
+    <div class="container" >
+        <div class="Expertise-top-div">
             <h2 class="Expertise-header">Our Retail & eCommerce <span class="Expertise-header-span">Expertise </span>
             </h2>
             <div class="Expertise-maindiv">
@@ -1462,109 +1542,7 @@
     <!-- development section end-->
 
     <!-- benefits -->
-    <!--     
-    <div class="container benefits-container">
-        <h2 class="benefits-header"> Retail & Ecommerce <span class="benefits-header-span"> Software Development
-                Benefits </span> </h2>
-        <div class="container">
-            <div class="row benefits-row">
-                <div class="col-6">
 
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
-                        </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Greater
-                                visibility</p>
-                            <p class="benefits-col-discription">Only an integrated cloud-based
-                                security stack is capable of providing the centralized visibility of cloud
-                                resources and data that is vital for defending against breaches and other
-                                potential threats. </p>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
-                        </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">
-                                Centralized security</p>
-                            <p class="benefits-col-discription">Cloud security allows you to consolidate protection of
-                                cloud-based networks for streamlined, continuous monitoring and analysis of numerous
-                                devices, endpoints, and systems. </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
-                        </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Data protection
-                            </p>
-                            <p class="benefits-col-discription">The best cloud computing providers will provide data
-                                security by design, offering strong access controls, encryption for data at rest and in
-                                transit, and data loss prevention. </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-6">
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
-                        </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Reduced costs
-                            </p>
-                            <p class="benefits-col-discription">With cloud security, you don’t have to pay for dedicated
-                                hardware to upgrade your security or use valuable resources to handle security updates
-                                and configurations. </p>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
-                        </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Cloud compliance
-                            </p>
-                            <p class="benefits-col-discription">Cloud providers go to great lengths to comply with both
-                                international and industry compliance standards, often undergoing rigorous independent
-                                verifications of their security, privacy, and compliance controls. </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                            <img src="./images/tick.png" alt="tick" class="benefits-img">
-
-                        </div>
-                        <div class="col-sm-11">
-                            <p class="benefits-col-header">Advanced threat detection
-                            </p>
-                            <p class="benefits-col-discription">Reputable CSPs also invest in cutting-edge technologies
-                                and highly skilled experts to provide real–time global threat intelligence that can
-                                detect both known and unknown threats. </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div> -->
 
 
     <div class="container benefits-container">
