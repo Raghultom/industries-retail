@@ -1119,7 +1119,7 @@ text-align: left !important;
 }
 
 .benefits-col-header{
-  margin-left: -40px !important;
+margin-left: -40px !important;
 margin-top:3px !important;
 font-size: 16px !important;
 font-weight: 600 !important;
@@ -1771,7 +1771,7 @@ margin-top: 10px !important;
 .form-background {
     margin: 0;
     padding: 0;
-    background: url('../About/aboutImages/session11bg.png') no-repeat center center;
+    background: url('./images/session11bg.png') no-repeat center center;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 95px;
@@ -2059,7 +2059,7 @@ margin-top: 10px !important;
     .form-container {
       width: 100%;
       margin-top: 30px;
-      padding: 30px;
+      padding: 30px; 
       margin-bottom: -30px;
     }
   
