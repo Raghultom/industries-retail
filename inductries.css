@@ -1509,6 +1509,7 @@ color: #676968 !important;
   cursor: pointer;
   border: none;
   margin-left: 4px !important;
+  margin-top: 20px !important;
 
 }
 
@@ -1559,7 +1560,7 @@ color: #676968 !important;
 
 @media (min-width:320px)and (max-width:374px){
   .casestudies-maindiv{
-    margin-top: 500px !important;
+    margin-top: 520px !important;
   }
 }
 @media (min-width:375px)and (max-width:424px){
