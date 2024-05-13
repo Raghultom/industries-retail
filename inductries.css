@@ -1560,12 +1560,12 @@ color: #676968 !important;
 
 @media (min-width:320px)and (max-width:374px){
   .casestudies-maindiv{
-    margin-top: 520px !important;
+    margin-top: 500px !important;
   }
 }
 @media (min-width:375px)and (max-width:424px){
   .casestudies-maindiv{
-    margin-top: 480px !important;
+    margin-top: 470px !important;
   }
 }
 @media (min-width:425px)and (max-width:767px){
