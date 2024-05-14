@@ -614,6 +614,7 @@ text-align: left;
     background-color: #23899C0D;
     /* height: 811px !important; */
     height: auto !important;
+    margin-top: 40px !important;
 
 }
 .scope-container{
@@ -706,6 +707,9 @@ display: none !important;
 }
 
 @media (max-width:767px) {
+  .scope-top-div{
+    margin-top: 0px !important;
+  }
     .scope-header{
 font-size: 32px;
 font-weight: 600;
@@ -1212,6 +1216,7 @@ color: #676968 !important;
  .client-main-div{
     height: 396px !important;
     background: #23899C0D;
+    margin-top: 30px !important;
     
 }
 .client-header{
@@ -1293,6 +1298,7 @@ margin-left: 25px !important;
 @media (max-width:768px) {
     .client-main-div{
         height: auto !important;
+        margin-top: 0px !important;
     }
     .client-header{
 font-size: 32px;
@@ -1360,7 +1366,7 @@ margin-top: 0px !important;
 /* end of client section================================== */
 .platform-mainidv{
     height: 540px !important;
-    margin-top: 40px !important;
+    margin-top: 60px !important;
 }
 .platform-header{
 font-size: 40px;
