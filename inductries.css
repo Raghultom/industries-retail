@@ -1435,6 +1435,9 @@ color: #676968;
 }
 
 @media (max-width:768px) {
+  .platform-mainidv{
+    margin-top: 40px !important;
+  }
   .platform-header{
 font-size: 32px !important;
 font-weight: 600;
