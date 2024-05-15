@@ -224,8 +224,9 @@
             </div>
         </div>
     </nav>
+
     <script>
-        // Function to open sidebar
+        // Function to open sidebar 
         function openSidebar() {
             document.querySelector('.sidebar').classList.add('active');
             document.querySelector('body').classList.add('sidebar-open');
@@ -238,20 +239,45 @@
         }
 
 
-        // Function to toggle dropdown
-        function toggleDropdown(id) {
-            var dropdown = document.getElementById(id + '-dropdown');
-            var icon = document.getElementById(id + '-icon');
-            if (dropdown.style.display === "none") {
-                dropdown.style.display = "block";
-                icon.classList.remove('bi-chevron-down');
-                icon.classList.add('bi-chevron-up');
-            } else {
-                dropdown.style.display = "none";
-                icon.classList.remove('bi-chevron-up');
-                icon.classList.add('bi-chevron-down');
-            }
+       
+        // function toggleDropdown(id) {
+        //     var dropdown = document.getElementById(id + '-dropdown');
+        //     var icon = document.getElementById(id + '-icon');
+        //     if (dropdown.style.display === "none") {
+        //         dropdown.style.display = "block";
+        //         icon.classList.remove('bi-chevron-down');
+        //         icon.classList.add('bi-chevron-up');
+        //     } else {
+        //         dropdown.style.display = "none";
+        //         icon.classList.remove('bi-chevron-up');
+        //         icon.classList.add('bi-chevron-down');
+        //     }
+        // }
+        
+
+
+function toggleDropdown(dropdownId, iconId) {
+    var dropdown = document.getElementById(dropdownId + '-dropdown');
+    var icon = document.getElementById(iconId);
+
+    var dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(function(d) {
+        if (d.id !== dropdownId + '-dropdown') {
+            d.style.display = 'none';
         }
+    });
+
+    if (dropdown.style.display === 'block') {
+        dropdown.style.display = 'none';
+        icon.classList.remove('bi-chevron-up');
+        icon.classList.add('bi-chevron-down');
+    } else {
+        dropdown.style.display = 'block';
+        icon.classList.remove('bi-chevron-down');
+        icon.classList.add('bi-chevron-up');
+    }
+}
+
 
         // Toggle sidebar on navbar toggler click
         document.querySelector('.navbar-toggler').addEventListener('click', function () {
@@ -262,6 +288,11 @@
             }
         });
     </script>
+
+
+    
+    
+
     <!-- nav bar end-->
     <!-- hero section -->
 
