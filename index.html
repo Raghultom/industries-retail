@@ -95,8 +95,9 @@
                     <hr class="footer-line" style="margin-top: 0px !important;">
                     <li class="nav-item" style="margin-top: -20px !important;">
                         <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                            onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
+                            onclick="toggleDropdown('Technologies')">Technologies <i id="Technologies-icon"
                                 class="fas bi-chevron-down"></i></a>
+
                         <div id="Technologies-dropdown" class="dropdown-menu"
                             aria-labelledby="navbarDropdownTechnologies" style="display: none;">
                             <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
@@ -110,7 +111,7 @@
 
                     <li class="nav-item" style="margin-top: -20px !important;">
                         <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                            onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
+                            onclick="toggleDropdown('Industries')">Industries <i id="Industries-icon"
                                 class="fas bi-chevron-down"></i></a>
                         <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
                             style="display: none;">
@@ -126,9 +127,9 @@
                     <li class="nav-item" style="margin-top: -20px !important;">
                         <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
                             onclick="toggleDropdown('Portfolios')">Portfolios
-                             <!-- <i id="services-icon"
+                            <!-- <i id="services-icon"
                                 class="fas bi-chevron-down"></i> -->
-                            </a>
+                        </a>
                         <!-- <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
                             style="display: none;">
                             <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
@@ -238,45 +239,32 @@
             document.querySelector('body').classList.remove('sidebar-open');
         }
 
+        function toggleDropdown(dropdownId) {
+            var dropdown = document.getElementById(dropdownId + '-dropdown');
+            var icon = document.getElementById(dropdownId + '-icon');
 
-       
-        // function toggleDropdown(id) {
-        //     var dropdown = document.getElementById(id + '-dropdown');
-        //     var icon = document.getElementById(id + '-icon');
-        //     if (dropdown.style.display === "none") {
-        //         dropdown.style.display = "block";
-        //         icon.classList.remove('bi-chevron-down');
-        //         icon.classList.add('bi-chevron-up');
-        //     } else {
-        //         dropdown.style.display = "none";
-        //         icon.classList.remove('bi-chevron-up');
-        //         icon.classList.add('bi-chevron-down');
-        //     }
-        // }
-        
+            // Close all dropdowns except the one being opened
+            var dropdowns = document.querySelectorAll('.dropdown-menu');
+            dropdowns.forEach(function (d) {
+                if (d.id !== dropdownId + '-dropdown' && d.style.display === 'block') {
+                    d.style.display = 'none';
+                    var associatedIcon = document.getElementById(d.id.replace('-dropdown', '-icon'));
+                    associatedIcon.classList.remove('bi-chevron-up');
+                    associatedIcon.classList.add('bi-chevron-down');
+                }
+            });
 
-
-function toggleDropdown(dropdownId, iconId) {
-    var dropdown = document.getElementById(dropdownId + '-dropdown');
-    var icon = document.getElementById(iconId);
-
-    var dropdowns = document.querySelectorAll('.dropdown-menu');
-    dropdowns.forEach(function(d) {
-        if (d.id !== dropdownId + '-dropdown') {
-            d.style.display = 'none';
+            // Toggle the display and icon class of the current dropdown
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none';
+                icon.classList.remove('bi-chevron-up');
+                icon.classList.add('bi-chevron-down');
+            } else {
+                dropdown.style.display = 'block';
+                icon.classList.remove('bi-chevron-down');
+                icon.classList.add('bi-chevron-up');
+            }
         }
-    });
-
-    if (dropdown.style.display === 'block') {
-        dropdown.style.display = 'none';
-        icon.classList.remove('bi-chevron-up');
-        icon.classList.add('bi-chevron-down');
-    } else {
-        dropdown.style.display = 'block';
-        icon.classList.remove('bi-chevron-down');
-        icon.classList.add('bi-chevron-up');
-    }
-}
 
 
         // Toggle sidebar on navbar toggler click
@@ -288,6 +276,7 @@ function toggleDropdown(dropdownId, iconId) {
             }
         });
     </script>
+
 
 
     
