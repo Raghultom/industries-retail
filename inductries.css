@@ -2337,8 +2337,8 @@ margin-top: -5px !important;
     }
     .footer-menu li:hover,
     .footer h3:hover {
-      color: #676968;
-      font-weight: 0;
+      color: #000000 !important;
+      font-weight: 500 !important;
     }
     .footer-border {
       display: none;
