@@ -232,7 +232,7 @@ padding-top: 3px !important;
 
 .software-solutions {
   height: 751px;
-  margin-top: 80px !important;
+  margin-top: 100px !important;
 }
 
 .software-solutions-header {
@@ -615,7 +615,7 @@ text-align: left;
     background-color: #23899C0D;
     /* height: 811px !important; */
     height: auto !important;
-    margin-top: 40px !important;
+    margin-top: 100px !important;
 
 }
 .scope-container{
@@ -761,7 +761,7 @@ display: none !important;
 
 /* Expertise */
 .Expertise-top-div{
-    margin-top: 70px !important;
+    margin-top: 100px !important;
 }
 
 .Expertise-header {
@@ -905,7 +905,7 @@ color: #676968 !important;
 .development-container {
     height: 520px !important;
     /* background-color: red; */
-    margin-top: -20px !important;
+    margin-top: 20px !important;
 }
 
 .development-header {
@@ -1047,7 +1047,7 @@ color: #676968 !important;
 
 .benefits-container {
     /* height: 520px; */
-    margin-top: 20px !important;
+    margin-top: 100px !important;
 }
 .benefits-container2{
   margin-top: 60px !important;
@@ -1217,7 +1217,7 @@ color: #676968 !important;
  .client-main-div{
     height: 396px !important;
     background: #23899C0D;
-    margin-top: 30px !important;
+    margin-top: 100px !important;
     
 }
 .client-card {
@@ -1378,7 +1378,7 @@ margin-top: 0px !important;
 /* end of client section================================== */
 .platform-mainidv{
     height: 540px !important;
-    margin-top: 60px !important;
+    margin-top: 100px !important;
 }
 .platform-header{
 font-size: 40px;
@@ -1418,7 +1418,7 @@ color: #676968;
 
 .platform-row {
     display: flex;
-    justify-content:  ;
+    /* justify-content:  ; */
 }
 .platform-maincol{
   margin-top: 30px !important;
@@ -1489,7 +1489,7 @@ margin-top: 10px !important;
 /* our case  */
 
 .casestudies-maindiv{
-  margin-top: -10px !important;
+  margin-top: 80px !important;
 }
 .casestudies-image_display1 {
   display: none;
@@ -1716,7 +1716,7 @@ margin-top: 10px !important;
 /* FAQ  */
 .section13layout{
   width: 100%;
-  /* margin-top: 108px; */
+  margin-top: 38px;
  }
  .section13header{
   width: 100%;
