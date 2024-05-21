@@ -2176,53 +2176,57 @@
   </div>
   
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+let currentOpenAccordion = null;
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-  const accordionHeaders = document.querySelectorAll('.accordion-header');
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', function () {
+        const accordionItem = this.parentElement;
+        const accordionContent = accordionItem.querySelector('.accordion-content');
+        const accordionToggle = accordionItem.querySelector('.accordion-toggle').querySelector('.arrow');
 
-  accordionHeaders.forEach(header => {
-      header.addEventListener('click', function() {
-          const accordionItem = this.parentElement;
-          const accordionContent = accordionItem.querySelector('.accordion-content');
-          const accordionToggle = accordionItem.querySelector('.accordion-toggle').querySelector('.arrow');
+        // If there's an open accordion and it's not the current one, close it
+        if (currentOpenAccordion && currentOpenAccordion !== accordionItem) {
+            const openContent = currentOpenAccordion.querySelector('.accordion-content');
+            const openToggle = currentOpenAccordion.querySelector('.accordion-toggle .arrow');
 
-          if (accordionContent.style.display === 'block') {
-              accordionContent.style.display = 'none';
-              accordionToggle.classList.remove('up');
-              accordionToggle.classList.add('down');
-          } else {
-              accordionContent.style.display = 'block';
-              accordionToggle.classList.remove('down');
-              accordionToggle.classList.add('up');
-          }
-      });
-  });
+            openContent.style.display = 'none';
+            openToggle.classList.remove('up');
+            openToggle.classList.add('down');
+
+            // Remove active class and reset styles for the previously open accordion header
+            currentOpenAccordion.querySelector('.accordion-header').classList.remove('active');
+            openToggle.classList.remove('white');
+            currentOpenAccordion.querySelector('.accordion-header').classList.remove('white');
+        }
+
+        // Toggle the current accordion content and arrow
+        if (accordionContent.style.display === 'block') {
+            accordionContent.style.display = 'none';
+            accordionToggle.classList.remove('up');
+            accordionToggle.classList.add('down');
+            this.classList.remove('active');
+            accordionToggle.classList.remove('white');
+            this.classList.remove('white');
+
+            currentOpenAccordion = null;
+        } else {
+            accordionContent.style.display = 'block';
+            accordionToggle.classList.remove('down');
+            accordionToggle.classList.add('up');
+            this.classList.add('active');
+            accordionToggle.classList.add('white');
+            this.classList.add('white');
+
+            currentOpenAccordion = accordionItem;
+        }
+    });
+});
 });
 
-// script.js
-document.addEventListener('DOMContentLoaded', function() {
-  const accordionItems = document.querySelectorAll('.accordion-header');
-
-  accordionItems.forEach(item => {
-      item.addEventListener('click', function() {
-          // Toggle active class on the clicked accordion item
-          this.classList.toggle('active');
-          
-          // Toggle arrow color
-          const accordionToggle = this.querySelector('.accordion-toggle').querySelector('.arrow');
-          accordionToggle.classList.toggle('white');
-
-          // Toggle text color
-          const accordionHeader = this.querySelector('.accordion-header');
-          accordionHeader.classList.toggle('white');
-      });
-  });
-});
-
-
-
-    </script>
+</script>
 
     <!-- FAQ   section end-->
     <!-- form  -->
